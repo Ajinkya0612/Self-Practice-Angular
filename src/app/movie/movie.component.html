@@ -1,0 +1,8 @@
+<!-- <p>movie works!</p>
+<li *ngFor="let item of movies,let i=index">
+    Name : {{ item.name}} || Rating : {{item.rating}}
+    <button [routerLink]="['/show',i]" [queryParams]="{page:1,orderBy:'asc'}" routerLinkActive="details">Details</button>
+    <button (click)="onSubmit()">Submit</button>
+</li> -->
+
+<p *ngFor="let item of posts">{{item.postTitle}}</p>

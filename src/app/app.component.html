@@ -1,3 +1,134 @@
-<div>
-  <form>
-    <label>Full Name
+<!-- <!-- <h1> Root App HTML content </h1>
+<h2>{{varCtoP}}</h2>
+ 
+<app-login [varpc] = "title"></app-login>
+<app-login [varpc] = "title" (messageEvent) = 'recieveMessage($event)'></app-login> -->
+<!-- <h3>Form to subscribe to my blogs</h3>
+
+<div class = "container mt-5">
+  <div class = "form-area">
+<form #f = 'ngForm' (submit) = "OnSubmit(f)">
+  <div class = "form-group">
+  <label for="fullname">full name:</label><br>
+  <input type="text" class = "form-control" name="fullname"
+    ngModel
+    #fullName='ngModel'
+    (change)="getValue(fullName)"
+    required 
+    [ngClass]="{'is-invalid' : fullName.touched && fullName.invalid}"
+    minlength="5"
+    maxlength="10"
+    >
+    <div *ngIf="fullName.errors?.['required']"> 
+      <div class="alert alert-danger"
+        *ngIf="fullName.touched && fullName.invalid">Enter Full Name</div>
+    </div> 
+
+    <div *ngIf="fullName.errors?.['minlength']"> 
+      <div class="alert alert-danger"
+        *ngIf="fullName.touched && fullName.invalid">Enter minimum 5 characters</div>
+    </div> 
+    
+    
+</div>
+  <div class = "form-group">
+  <label for="email">email:</label><br>
+  <input type="text" class = "form-control" name="email" 
+    ngModel email
+    #email='ngModel'
+    (change)="getValue(email)"
+    required
+    [ngClass]="{'is-invalid' :  email.touched && email.invalid}"
+    minlength="5"
+    maxlength="10">
+    <div *ngIf="email.errors?.['required']"> 
+      <div class="alert alert-danger"
+        *ngIf="email.touched && email.invalid ">Enter Correct email id</div>
+
+     </div> 
+     <div *ngIf="email.errors?.['minlength']"> 
+      <div class="alert alert-danger"
+        *ngIf="email.touched && email.invalid">Enter minimum 5 characters</div>
+    </div> 
+  </div>
+  <div class = "form-group">
+  <label for="feedback">feedback:</label><br>
+  <input type="text" class = "form-control" name="feedback"
+    ngModel
+    #feedback='ngModel'
+    (change)="getValue(feedback)"
+    required
+    [ngClass]="{'is-invalid' :  feedback.touched && feedback.invalid}"
+    minlength="5"
+    maxlength="10">
+    
+    <div *ngIf="feedback.errors?.['required']"> 
+      <div class="alert alert-danger"
+        *ngIf="feedback.touched && feedback.invalid">Please enter your feedback</div>
+      </div>
+        <div *ngIf="feedback.errors?.['minlength']"> 
+          <div class="alert alert-danger"
+            *ngIf="feedback.touched && feedback.invalid">Enter minimum 5 characters</div>
+        </div> 
+   
+</div>
+  <div class = "form-group">
+  <input type="submit" class = "btn btn-primary"  value="Submit" id = "btn" [disabled]="f.invalid"></div>
+</form>
+</div>
+</div>  -->
+<!-- <button [routerLink]="['/goto']" routerLinkActive="router-link-active" >click me</button> --> -->
+<!-- <a [routerLink]="['/goto']" routerLinkActive="router-link-active" >click me</a> --> -->
+<!-- <a [href]="['/goto']" routerLinkActive="router-link-active" >click me</a> -->
+<!-- <button type="submit" class = "btn btn-primary"  value="Submit" id = "btn" [disabled]="f.invalid"> -->
+<!-- <app-reactive></app-reactive>
+<app-root></app-root> -->
+<!-- <router-outlet></router-outlet> -->
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+ 
+<body>
+  <h1 style="text-align: center;">Welcome to Angular</h1>
+ 
+              <!-- COMPONENT->LOGIN -->
+ 
+  <!-- <h1>Welcome to Angular-Login</h1> -->
+  <!-- <app-login></app-login> -->
+  <!-- <app-login [varpc]="varpc"></app-login>
+  <app-login [varpc]="varpc" (messageEvent)='receiveMessage($event)'></app-login>
+  <app-login (messageEvent)='receiveMessage($event)'></app-login>
+  <p>{{varChild2Parent}}</p>
+  <p>{{ varOC2P}}</p> -->
+  <!-- <app-login [varpc]="title" (messageEvent)='receiveMessage($event)'></app-login> -->
+ 
+              <!-- COMPONENT->PRACTICE -->
+  <!-- <h1>Welcome to Angular-Practice</h1> -->
+  <!-- <app-practice></app-practice> -->
+                <!-- COMPONENT->REACTIVE -->
+<!-- <app-reactive></app-reactive> -->
+                <!-- COMPONENT->ROUTER -->
+<!-- <hr style="height:1px;border-width:0;background-color: black;">
+<h3 style="text-align: center;">Router</h3>
+ 
+<button type="submit">Click Me</button>
+<br>
+<!-- <app-router></app-router> -->
+<!-- <button [router-link]="/router">child</button>
+<button [routerLink]="['/post1']" routerLinkActive="button" >Working?</button>
+<a [routerLink]="['/post2']" routerLinkActive="anchor" >Working?</a>
+<!-- <a href="/post">Lorem</a> -->
+<button [routerLink]="['/post']" routerLinkActive="button" >Post</button>
+<router-outlet></router-outlet>
+<button [routerLink]="['/show']" routerLinkActive="button">Show</button>
+<router-outlet></router-outlet>
+</body>
+ 
+</html>

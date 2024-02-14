@@ -1,0 +1,61 @@
+<!-- <p>reactive works!</p> -->
+<!-- <form [formGroup]="form">
+    <div class="form-group">
+        <label>Full Name</label>
+        <input 
+        type="text"
+        class="form-control"
+        name="fullname"
+        formControlName="fullName">
+    </div>
+    <div *ngIf="fullName.errors?.['required']"> 
+        <div class="alert alert-danger"
+          *ngIf="fullName.touched && fullName.invalid">Enter your Name</div>
+        </div>
+          <div *ngIf="fullName.errors?.['minlength']"> 
+            <div class="alert alert-danger"
+              *ngIf="fullName.touched && fullName.invalid">Enter minimum 5 characters</div>
+          </div> 
+
+    <div class="form-group">
+        <label>Email</label>
+        <input 
+        type="email"
+        class="form-control"
+        name="email"
+        formControlName="email">
+    </div>
+    <div *ngIf="email.errors?.['required']"> 
+        <div class="alert alert-danger"
+          *ngIf="email.touched && email.invalid">Enter email id</div>
+        </div>
+          <div *ngIf="email.errors?.['minlength']"> 
+            <div class="alert alert-danger"
+              *ngIf="email.touched && email.invalid">Enter minimum 5 characters</div>
+          </div> 
+    
+    <div class="form-group">
+        <label>Feedback</label>
+        <input 
+        type="text"
+        class="form-control"
+        name="feedback"
+        formControlName="feedback">
+    </div>
+    <div *ngIf="feedback.errors?.['required']"> 
+        <div class="alert alert-danger"
+          *ngIf="feedback.touched && feedback.invalid">Please enter your feedback</div>
+        </div>
+          <div *ngIf="feedback.errors?.['minlength']"> 
+            <div class="alert alert-danger"
+              *ngIf="feedback.touched && feedback.invalid">Enter minimum 5 characters</div>
+          </div> 
+    <br>
+    <div class = "form-group">
+        <input type="submit" class = "btn btn-primary"  value="Submit" id = "btn" [disabled]="form.invalid"></div>
+    </form> -->
+    <ul *ngFor="let item of arr">
+      <li>
+        <a [routerLink]="['/path']">{{item}}</a>
+      </li>
+    </ul>
